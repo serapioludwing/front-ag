@@ -1,0 +1,27 @@
+<div class="register-container">
+  <h2>Registro</h2>
+  <form (ngSubmit)="onSubmit()" class="register-form">
+    <input
+      type="text"
+      [(ngModel)]="username"
+      name="username"
+      placeholder="Usuario"
+      required
+    />
+    <input
+      type="password"
+      [(ngModel)]="password"
+      name="password"
+      placeholder="Contraseña"
+      required
+    />
+    <button type="submit">Registrarse</button>
+  </form>
+
+  <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
+  <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+  <a routerLink="/login" class="login-link">
+    ¿Ya tienes cuenta? Inicia sesión
+  </a>
+</div>

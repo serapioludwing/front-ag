@@ -1,0 +1,96 @@
+.employee-list-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header h2 {
+    color: #1f2937;
+  }
+  
+  .new-employee-btn {
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .new-employee-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .employee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .employee-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .employee-info {
+    margin-bottom: 0.75rem;
+  }
+  
+  .employee-name {
+    font-size: 1.2rem;
+    color: #111827;
+  }
+  
+  .employee-salary {
+    display: block;
+    color: #10b981;
+    font-weight: bold;
+    margin-top: 0.25rem;
+  }
+  
+  .employee-surname {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #6b7280;
+  }
+  
+  .employee-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #3b82f6;
+    transition: color 0.3s;
+  }
+  
+  .edit-btn:hover {
+    color: #2563eb;
+  }
+  
+  .delete-btn {
+    color: #ef4444;
+  }
+  
+  .delete-btn:hover {
+    color: #dc2626;
+  }
+  

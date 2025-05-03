@@ -1,0 +1,20 @@
+<div class="employee-list-container">
+  <div class="header">
+    <h2>Lista de empleados</h2>
+    <a routerLink="/employees/new" class="new-employee-btn">+ Nuevo empleado</a>
+  </div>
+
+  <div class="employee-list">
+    <div *ngFor="let employee of employees" class="employee-card">
+      <div class="employee-info">
+        <strong class="employee-name">{{ employee.name }} {{ employee.surname }}</strong>
+        <span class="employee-age"> - {{ employee.age }} Años</span>
+        <span class="employee-salary">Salario: Q {{ employee.salary }}</span>
+      </div>
+      <div class="employee-actions">
+        <a [routerLink]="['/employees', employee.id, 'edit']" class="edit-btn">Editar</a>
+        <button (click)="delete(employee.id)" class="delete-btn">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>

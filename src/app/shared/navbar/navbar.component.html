@@ -1,0 +1,12 @@
+<nav *ngIf="isLoggedIn" class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a routerLink="/employees">Agexport</a>
+      </div>
+      <div class="navbar-links">
+        <a routerLink="/employees">Empleados</a>
+        <button (click)="logout()">Cerrar sesión</button>
+      </div>
+    </div>
+  </nav>
+  

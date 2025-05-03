@@ -1,0 +1,39 @@
+<div class="employee-form-container">
+  <h2>{{ isEditMode ? 'Editar' : 'Nuevo' }} Empleado</h2>
+
+  <form (ngSubmit)="onSubmit()" class="employee-form">
+    <input
+      type="text"
+      [(ngModel)]="employee.name"
+      name="name"
+      placeholder="Nombre del empleado"
+      required
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="employee.surname"
+      name="surname"
+      placeholder="Apellido del empleado"
+      required
+    />
+    
+    <input
+      type="number"
+      [(ngModel)]="employee.age"
+      name="age"
+      placeholder="Edad"
+      required
+    />
+
+    <input
+      type="number"
+      [(ngModel)]="employee.salary"
+      name="salary"
+      placeholder="Salario"
+      required
+    />
+
+    <button type="submit">{{ isEditMode ? 'Actualizar' : 'Guardar' }}</button>
+  </form>
+</div>

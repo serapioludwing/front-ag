@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">example-front</string>
+    <string name="title_activity_main">example-front</string>
+    <string name="package_name">com.examplefront.com</string>
+    <string name="custom_url_scheme">com.examplefront.com</string>
+</resources>
